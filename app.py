@@ -46,12 +46,19 @@ def handle_message(event):
     res = ""
     
     if( msgtext.lower().startswith("halo")):
-        res = "Halo juga ^.^"
-    elif( msgtext.lower() == "hi"):
-        res = "Hi ju.ga ^.^"
+        res = "Halo juga"
+    elif( msgtext.lower() == "hai"):
+        res = "hai juga"
+    elif( msgtext.lower() == "assalamualaikum"):
+        res = "Wa'alaikumussalam"
+    elif( msgtext.lower().startswith("selamat pagi")):
+        res = "Selamat malam juga"
+    elif( msgtext.lower().startswith("selamat siang")):
+        res = "Selamat siang juga"
+    elif( msgtext.lower().startswith("selamat sore)):
+        res = "Selamat sore juga"
     elif( msgtext.lower().startswith("selamat malam")):
         res = "Selamat malam juga"
-    
 
     if(res != ""):
         line_bot_api.reply_message(
