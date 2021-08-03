@@ -55,7 +55,7 @@ def handle_message(event):
         res = "Selamat malam juga"
     elif( msgtext.lower().startswith("selamat siang")):
         res = "Selamat siang juga"
-    elif( msgtext.lower().startswith("selamat sore)):
+    elif( msgtext.lower().startswith("selamat sore")):
         res = "Selamat sore juga"
     elif( msgtext.lower().startswith("selamat malam")):
         res = "Selamat malam juga"
