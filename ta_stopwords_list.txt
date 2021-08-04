@@ -279,6 +279,7 @@ kalaulah
 kalaupun
 kali
 kalian
+kalo
 kami
 kamilah
 kamu
@@ -635,6 +636,7 @@ siapa
 siapakan
 siapakah
 siapapun
+sih
 sini
 sinilah
 soal
@@ -732,4 +734,5 @@ yakin
 yakni
 yang
 yg
+ya
 
