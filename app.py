@@ -52,7 +52,7 @@ def handle_message(event):
     elif( msgtext.lower() == "assalamualaikum"):
         res = "Wa'alaikumussalam"
     elif( msgtext.lower().startswith("selamat pagi")):
-        res = "Selamat malam juga"
+        res = "Selamat pagi juga"
     elif( msgtext.lower().startswith("selamat siang")):
         res = "Selamat siang juga"
     elif( msgtext.lower().startswith("selamat sore")):
