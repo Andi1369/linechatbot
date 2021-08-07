@@ -1,4 +1,4 @@
-from flask import Flask, request, abort
+ from flask import Flask, request, abort
 from preprocess import Preprocess
 from process import Process
 import json
@@ -68,7 +68,7 @@ def handle_message(event):
         keywords =  Preprocess(msgtext)
         proc = Process(keywords.result)
 
-        if(proc.result["val"] >= 10):
+        if(proc.result["val"] >= 15):
             line_bot_api.reply_message(
                 event.reply_token,
                 TextSendMessage(text="Jawaban tidak ditemukan"))

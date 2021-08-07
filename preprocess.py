@@ -34,9 +34,4 @@ class Preprocess():
         factory = StemmerFactory()
         stemmer = factory.create_stemmer()
         return  [(stemmer.stem(token)) for token in data]  
-        
-
-
-# data = "Apa latar belakang Jepang membagi wilayah Indonesia menjadi tiga pemerintahan militer ?"
-# p = Preprocess(data)
-# print(p.res)        
+               

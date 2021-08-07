@@ -77,9 +77,6 @@ class Process():
             potentials.append(potential)
         p.closeDB()
 
-    
-        for pot in potentials:
-            print(pot,"\n")
         
         min_val = potentials[0]['val']
         min_index = 0
@@ -89,4 +86,3 @@ class Process():
                 min_val = potential['val']
                 min_index = i        
         return potentials[min_index]
-  
