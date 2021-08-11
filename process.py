@@ -77,7 +77,6 @@ class Process():
             potentials.append(potential)
         p.closeDB()
 
-        
         min_val = potentials[0]['val']
         min_index = 0
         for i in range(0,len(potentials)):
