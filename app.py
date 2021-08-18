@@ -61,7 +61,7 @@ def handle_message(event):
         res = "Selamat malam juga"
     elif( msgtext.lower().startswith("terima kasih")):
         res = "Terima kasih kembali"
-    elif( msgtext.lower().startswith("lihat nilai distance ")):
+    elif( msgtext.lower().startswith("#distance ")):
         keywords = Preprocess(msgtext)
         result = Process(keywords.result)
         res = json.dumps(result.result)
