@@ -65,10 +65,7 @@ class Process():
                 counterjawaban += min(targetarr)
                 if(counterjawaban >= self.limit_per_jawaban):    
                     break
-                
 
-            
-                 
             potential = {
                 'val' : counterjawaban,
                 'jawaban' : jawaban,

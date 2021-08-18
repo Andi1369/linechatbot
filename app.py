@@ -59,6 +59,12 @@ def handle_message(event):
         res = "Selamat sore juga"
     elif( msgtext.lower().startswith("selamat malam")):
         res = "Selamat malam juga"
+    elif( msgtext.lower().startswith("terima kasih")):
+        res = "Terima kasih kembali"
+    elif( msgtext.lower().startswith("#debug ")):
+        keywords = Preprocess(msgtext)
+        result = Process(keywords.result)
+        res = json.dumps(result.result)
 
     if(res != ""):
         line_bot_api.reply_message(
